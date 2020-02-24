@@ -1,0 +1,5 @@
+export const ADD_CALORIE = 'ADD_CALORIE';
+export const VIEW_CALORIES = 'VIEW_CALORIES';
+export const DELETE_FOOD_ITEM = 'DELETE_FOOD_ITEM';
+export const FETCH_EXERCISE = 'FETCH_EXERCISE';
+export const ADD_EXERCISE = 'ADD_EXERCISE';

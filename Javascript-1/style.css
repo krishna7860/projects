@@ -1,0 +1,214 @@
+:root {
+  --page-1-color: rgba(70, 130, 80, 0.3);
+  --page-2-color: rgba(21, 67, 96, 0.3);
+  --page-3-color: rgba(230, 126, 34, 0.3);
+  --page-4-color: rgba(192, 57, 43, 0.3);
+  --page-5-color: rgba(40, 55, 71, 0.3);
+  --animate-speed: 1s;
+}
+@font-face {
+  font-family: Font;
+  src: url(assets/feast-of-flesh-bb.regular.otf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Font", sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: 10px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.popupb {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 9;
+  display: none;
+}
+/* Page Colors */
+#page-1 {
+  background: rgba(0, 0, 0, 0.5) url("./images/wT6nJd.jpg") no-repeat center
+    center/cover;
+  z-index: 1;
+}
+#page-2 {
+  background: rgba(0, 0, 0, 0.5) url("./images/2.jpg") no-repeat center
+    center/cover;
+}
+#page-3 {
+  background: white;
+  position: relative;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+.popup {
+  position: absolute;
+  height: 300px;
+  width: 800px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  left: 15rem;
+  display: flex;
+  top: 8rem;
+  color: black;
+}
+.popup img {
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+}
+.popup h2 {
+  margin: 4rem;
+  line-height: 2.8;
+}
+.red {
+  color: red;
+}
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+.page p {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+.btn-dark {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #333;
+  color: #f4f4f4;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1;
+  transition: all 0.3s ease-in;
+}
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+/* Page animation */
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-out;
+}
+#user-name {
+  padding: 1rem;
+  width: 200px;
+  font-size: 1rem;
+  border: 2px solid white;
+  color: white;
+  background: black;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.main-box .press-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 2rem;
+
+  width: 50%;
+  margin: auto;
+}
+.main-box .press-grid .press {
+  height: 50px;
+  width: 50px;
+  color: black;
+  background: var(--page-3-color);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.4rem 0.2rem;
+  transition: all 0.3s;
+}
+.main-box .press-grid .press:hover {
+  transform: scale(1.5) rotateZ(10deg);
+}
+.main-box .game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#letter {
+  color: black;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.quote {
+  position: absolute;
+  color: black;
+  top: 8rem;
+  left: 44rem;
+  visibility: hidden;
+}
+#hint {
+  color: red;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  font-family: sans-serif;
+  margin: 0.3rem 0;
+}
+.main-box .game > img {
+  width: 22rem;
+  margin-top: -50px;
+}
+#power {
+  color: black;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin: 0.3rem 0 0 0.3rem;
+}
+
+/* Keyframe */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: para var(--animate-speed) forwards ease-out 2s;
+}
+/* Keyframe */
+@keyframes para {
+  to {
+    transform: translateX(0);
+  }
+}

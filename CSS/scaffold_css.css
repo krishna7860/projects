@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+:root {
+  --primary-color: #581845;
+}
+
+html {
+  font-size: 10px;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+  word-spacing: 2px;
+  letter-spacing: 0px;
+  font-size: 1.6rem;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+div {
+  padding: 2rem;
+}
+/* Utility */
+.fluid-box {
+  max-width: 1100px;
+  margin: auto;
+}
+.column-6 {
+  width: 50%;
+}
+.column-full {
+  width: 100%;
+}
+pre {
+  color: #222;
+  background: #ddd;
+  padding: 2rem;
+  border-radius: 10px;
+}
+/* Typography-start */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+h3 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+h4 {
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+h5 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+p {
+  padding-bottom: 1rem;
+  color: #222;
+  word-spacing: 2px;
+  font-size: 1.6rem;
+}
+
+.article_heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.anchor_text {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Typography-end */
+
+/* Button anchors-start */
+
+.btn {
+  background: white;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary-color);
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+}
+button {
+  background: white;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+input[type="submit"] {
+  background: white;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+input[type="button"] {
+  background: white;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: white;
+  color: #fff !important;
+  background: var(--primary-color) !important;
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary-color);
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+}
+
+.btn-primary:hover {
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+
+.btn-danger {
+  background: white;
+  color: #fff !important;
+  background: #900c3f !important;
+  padding: 1rem 2rem;
+  border: 2px solid #900c3f !important;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+}
+
+.btn-danger:hover {
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+
+/* Button anchors-end */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Radio button */
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container-radio input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-radio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Checkbox end */
+
+/* Orderlist , Unordered List */
+ul {
+  list-style-type: circle;
+}
+
+form .form-group label {
+  font-size: 1.5rem;
+  display: block;
+  margin: 1rem 0rem;
+}
+
+form .form-group input[type="text"],
+form .form-group input[type="email"],
+form .form-group input[type="number"],
+textarea {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  font-family: "Raleway", sans-serif;
+}
+
+form legend {
+  margin-left: 5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}

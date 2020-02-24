@@ -1,0 +1,78 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10 px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+  background: #28a745 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.modal-dialog {
+  max-width: 900px;
+  margin: 1.75rem auto;
+}
+body {
+  overflow-x: hidden;
+}
+.w-150 {
+  width: 200px !important;
+}
+.p-intensive {
+  padding: 0 20rem !important;
+}
+.clip {
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+.w-300 {
+  width: 300px !important;
+}
+@media (max-width: 578px) {
+  .w-150 {
+    width: 100px;
+  }
+}
+.top {
+  padding: 3rem;
+  width: 100vw;
+}
+.top-rated {
+  width: 150px;
+  display: flex;
+  margin: 0 1rem;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.top-rated img {
+  border-radius: 10px;
+  width: 140px;
+  height: 200px;
+}
+.top-rated .name {
+  display: flex;
+  padding: 0.5rem;
+
+  justify-content: space-between;
+}
+.tpr {
+  display: flex;
+  overflow-y: hidden;
+}
+.img-modal {
+  width: 100px;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 10px;
+}

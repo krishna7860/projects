@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8985a3179d.js"></script>
+    <title>Hangman</title>
+  </head>
+  <body>
+    <!-- Page 1 (Intro)-->
+    <section id="page-1" class="page">
+      <h1>Welcome To Hangman Game</h1>
+      <p>
+        Hangman is a paper and pencil guessing game for two or more players. One
+        player thinks of a word, phrase or sentence and the other tries to guess
+        it by suggesting letters within a certain number of guesses.
+      </p>
+      <div>
+        <a href="#page-2" class="btn" id="start"
+          >Start <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section id="page-2" class="page">
+      <h1>What ! Who is he</h1>
+      <p>
+        You are walking across the jungle suddenly you watched a man hanging
+        there ! Save him
+      </p>
+      <div>
+        <input type="text" placeholder="Enter Name " id="user-name" />
+        <a href="#page-3" class="btn" id="startGame"
+          >Start Game<i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section id="page-3" class="page">
+      <div class="main-box">
+        <div class="popupb">
+          <div class="popup">
+            <img src="assets/giphy.gif" alt="" />
+            <h2 class="alert">
+              You Killed hangman ! <br />
+              <span class="red"> You Lose</span>
+            </h2>
+          </div>
+        </div>
+        <div class="game" id="game">
+          <span class="power" id="power">| | | | |</span>
+          <span class="quote">Help..!!</span>
+          <img src="assets/anime-dri.gif" alt="" />
+          <span id="hint"
+            >Hint : What has many keys, but can't even open a single door?</span
+          >
+          <span id="letter">_ _ _ _ _ _ _</span>
+        </div>
+        <div class="press-grid">
+          <div class="press" onclick="checkValue()">A</div>
+          <div class="press" onclick="checkValue()">B</div>
+          <div class="press" onclick="checkValue()">C</div>
+          <div class="press" onclick="checkValue()">D</div>
+          <div class="press" onclick="checkValue()">E</div>
+          <div class="press" onclick="checkValue()">F</div>
+          <div class="press" onclick="checkValue()">G</div>
+          <div class="press" onclick="checkValue()">H</div>
+          <div class="press" onclick="checkValue()">I</div>
+          <div class="press" onclick="checkValue()">J</div>
+          <div class="press" onclick="checkValue()">K</div>
+          <div class="press" onclick="checkValue()">L</div>
+          <div class="press" onclick="checkValue()">M</div>
+          <div class="press" onclick="checkValue()">N</div>
+          <div class="press" onclick="checkValue()">O</div>
+          <div class="press" onclick="checkValue()">P</div>
+          <div class="press" onclick="checkValue()">Q</div>
+          <div class="press" onclick="checkValue()">R</div>
+          <div class="press" onclick="checkValue()">S</div>
+          <div class="press" onclick="checkValue()">T</div>
+          <div class="press" onclick="checkValue()">U</div>
+          <div class="press" onclick="checkValue()">V</div>
+          <div class="press" onclick="checkValue()">W</div>
+          <div class="press" onclick="checkValue()">X</div>
+          <div class="press" onclick="checkValue()">Y</div>
+          <div class="press" onclick="checkValue()">Z</div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

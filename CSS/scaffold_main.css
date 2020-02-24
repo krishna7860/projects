@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0rem 10rem 0rem;
+}
+.lead {
+}
+.main button {
+  margin-top: 3rem;
+}
+.main-nav {
+  text-align: center;
+}
+
+.main-nav img {
+  width: 150px;
+  margin: auto;
+}
